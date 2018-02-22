@@ -20,7 +20,7 @@ excerpt: 当年创建 jekyll 时默认的一篇文章，没什么意义，我也
 		{% if paginator.previous_page == 1 %}
 		<a href="{{ site.baseurl}}/article/">
 		{% else %}
-		<a href="{{ site.baseurl}}/article/{{ paginator.previous_page }}">
+		<a href="{{ site.baseurl}}/article/{{ paginator.previous_page }}/">
 		{% endif %}
 			<span>&laquo;</span>
 		</a>
@@ -33,9 +33,9 @@ excerpt: 当年创建 jekyll 时默认的一篇文章，没什么意义，我也
 	<li>
 		{% endif %}
 		{% if i == 1 %}
-		<a href="{{site.baseurl}}/article">{{i}}</a>
+		<a href="{{site.baseurl}}/article/">{{i}}</a>
 		{% else %}
-		<a href="{{site.baseurl}}/article/{{i}}">{{i}}</a>
+		<a href="{{site.baseurl}}/article/{{i}}/">{{i}}</a>
 		{% endif %}
 	</li>
 	{% endfor %}
@@ -43,13 +43,13 @@ excerpt: 当年创建 jekyll 时默认的一篇文章，没什么意义，我也
 		{% if paginator.page == paginator.total_pages %}
 		<span>&raquo;</span>
 		{% else %}
-		<a href="{{ site.baseurl}}/article/{{ paginator.next_page }}">
+		<a href="{{ site.baseurl}}/article/{{ paginator.next_page }}/">
 			<span>&raquo;</span>
 		</a>
 		{% endif %}
 	</li>
 	<li>
-		<a href="{{ site.baseurl}}/article/{{paginator.total_pages}}">
+		<a href="{{ site.baseurl}}/article/{{paginator.total_pages}}/">
 			<span>末页</span>
 		</a>
 	</li>
