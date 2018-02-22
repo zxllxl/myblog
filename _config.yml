@@ -6,10 +6,3 @@ theme: jekyll-theme-cayman
 permalink: /:year/:month/:day/:title/
 paginate: 1
 paginate_path: "article/:num"
-
-# Build settings
-markdown: kramdown
-
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
